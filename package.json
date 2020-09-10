@@ -1,6 +1,6 @@
 {
   "name": "lbopush-react-native",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -9,5 +9,5 @@
   "keywords": [],
   "author": "lboxiaobo",
   "license": "ISC",
-  "repository": "https://github.com/bojianyin/lbopush-react-native.git",
+  "repository": "https://github.com/bojianyin/lbopush-react-native.git"
 }
