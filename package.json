@@ -8,5 +8,6 @@
   },
   "keywords": [],
   "author": "lboxiaobo",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": "https://github.com/bojianyin/lbopush-react-native.git",
 }
