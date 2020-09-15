@@ -1,2 +1,4 @@
 R_DEF: Internal format may change without notice
 local
+string channel_description
+string channel_name

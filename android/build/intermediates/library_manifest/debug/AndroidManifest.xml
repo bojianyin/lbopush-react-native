@@ -23,6 +23,11 @@
     <uses-permission android:name="com.personal.mipush.permission.MIPUSH_RECEIVE" />
 
     <application>
+        <receiver
+            android:name="com.personal.mpush.receiver.HuaWeiMessageReceiver"
+            android:enabled="true"
+            android:exported="true" />
+
         <service
             android:name="com.xiaomi.push.service.XMPushService"
             android:enabled="true"
@@ -73,6 +78,14 @@
                 <action android:name="com.xiaomi.mipush.ERROR" />
             </intent-filter>
         </receiver>
+
+        <service
+            android:name="com.personal.mpush.service.MyHmsMessageService"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.huawei.push.action.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
     </application>
 
 </manifest>

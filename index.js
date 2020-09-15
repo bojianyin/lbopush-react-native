@@ -30,45 +30,69 @@ export default class MyPush{
         listeners[callback] = null
     }
 
-    static registerPush(appid,appkey){
-        return Mipush.registerPush(appid,appkey);
+    //xiaomi -> regiter | huawei->init getToken()
+    static registerPush(channelname,channeldec,channelid,conf){
+        return Mipush.registerPush(channelname,channeldec,channelid,JSON.stringify(conf));
     }
 
+    //xiaomi -> unregisterPush | huawei-> deltoken
     static unregisterPush(){
         return Mipush.unregisterPush();
     }
 
+    //xiaomi
     static enablePush(){
         return Mipush.enablePush();
     }
 
+    //xiaomi
     static disablePush(){
         return Mipush.disablePush();
     }
 
-
+    //xiaomi
     static setAlias(alias){
         return Mipush.setAlias(alias);
     }
+
+    //xiaomi
     static unsetAlias(alias){
         return Mipush.unsetAlias(alias);
     }
+
+    //xiaomi
     static pausePush(){
         return Mipush.pausePush();
     }
+
+    //xiaomi
     static resumePush(){
         return Mipush.resumePush();
     }
 
+    //xiaomi
     static getAllAlias(){
         return Mipush.getAllAlias();
     }
 
+    //xiaomi
     static clearNotification(){
         return Mipush.clearNotification();
     }
 
+    //xiaomi
     static getRegId(){
         return Mipush.getRegId();
     }
+
+    //获取手机厂商品牌
+    static getPhoneType(){
+        return Mipush.getPhoneType();
+    }
+
+    //获取华为token 需要上传给服务器
+    static getHuaweitoken(){
+        return Mipush.getHuaweitoken();
+    }
+
 }
