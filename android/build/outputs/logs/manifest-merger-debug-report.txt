@@ -1,174 +1,170 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:2:1-87:12
-INJECTED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:2:1-87:12
-INJECTED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:2:1-87:12
-INJECTED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:2:1-87:12
-INJECTED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:2:1-87:12
-INJECTED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:2:1-87:12
-INJECTED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:2:1-87:12
+ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:2:1-86:12
+INJECTED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:2:1-86:12
+INJECTED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:2:1-86:12
+INJECTED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:2:1-86:12
+INJECTED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:2:1-86:12
+INJECTED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:2:1-86:12
+INJECTED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:2:1-86:12
 	package
 		ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:4:5-33
 		INJECTED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml
 		INJECTED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml
-		ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:2:1-87:12
+		ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:2:1-86:12
 		INJECTED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml
 	xmlns:tools
 		ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml
-		ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:2:1-87:12
+		ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:2:1-86:12
 		INJECTED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:2:11-69
 	tools:ignore
 		ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:5:5-29
+uses-permission#android.permission.WAKE_LOCK
+ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:7:5-68
+	android:name
+		ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:7:22-65
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:7:5-81
+ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:9:5-81
 	android:name
-		ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:7:22-78
+		ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:9:22-78
 uses-permission#android.permission.INTERNET
-ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:8:5-67
+ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:10:5-67
 	android:name
-		ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:8:22-64
+		ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:10:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:9:5-79
+ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:11:5-79
 	android:name
-		ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:9:22-76
+		ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:11:22-76
 uses-permission#android.permission.ACCESS_WIFI_STATE
-ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:10:5-76
+ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:12:5-76
 	android:name
-		ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:10:22-73
+		ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:12:22-73
 uses-permission#android.permission.READ_PHONE_STATE
-ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:11:5-75
+ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:13:5-75
 	android:name
-		ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:11:22-72
+		ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:13:22-72
 uses-permission#android.permission.VIBRATE
-ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:12:5-66
+ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:14:5-66
 	android:name
-		ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:12:22-63
+		ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:14:22-63
 permission#com.personal.mipush.permission.MIPUSH_RECEIVE
-ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:14:5-16:47
+ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:16:5-18:47
 	android:protectionLevel
-		ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:16:9-44
+		ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:18:9-44
 	android:name
-		ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:15:9-69
+		ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:17:9-69
 uses-permission#com.personal.mipush.permission.MIPUSH_RECEIVE
-ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:17:5-85
+ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:19:5-85
 	android:name
-		ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:17:22-82
+		ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:19:22-82
 application
-ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:19:5-85:19
-receiver#com.personal.mpush.receiver.HuaWeiMessageReceiver
-ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:20:9-23:48
-	android:enabled
-		ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:22:13-35
-	android:exported
-		ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:23:13-36
-	android:name
-		ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:21:13-59
+ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:21:5-84:19
 service#com.xiaomi.push.service.XMPushService
-ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:25:9-28:46
+ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:24:9-27:46
 	android:process
-		ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:28:13-43
+		ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:27:13-43
 	android:enabled
-		ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:27:13-35
+		ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:26:13-35
 	android:name
-		ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:26:13-65
+		ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:25:13-65
 service#com.xiaomi.push.service.XMJobService
-ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:29:9-34:46
+ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:28:9-33:46
 	android:process
-		ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:34:13-43
+		ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:33:13-43
 	android:enabled
-		ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:31:13-35
+		ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:30:13-35
 	android:exported
-		ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:32:13-37
+		ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:31:13-37
 	android:permission
-		ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:33:13-69
+		ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:32:13-69
 	android:name
-		ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:30:13-64
+		ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:29:13-64
 service#com.xiaomi.mipush.sdk.PushMessageHandler
-ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:35:9-38:39
+ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:34:9-37:39
 	android:enabled
-		ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:37:13-35
+		ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:36:13-35
 	android:exported
-		ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:38:13-36
+		ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:37:13-36
 	android:name
-		ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:36:13-68
+		ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:35:13-68
 service#com.xiaomi.mipush.sdk.MessageHandleService
-ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:39:9-41:38
+ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:38:9-40:38
 	android:enabled
-		ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:41:13-35
+		ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:40:13-35
 	android:name
-		ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:40:13-70
+		ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:39:13-70
 receiver#com.xiaomi.push.service.receivers.NetworkStatusReceiver
-ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:43:9-51:20
+ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:42:9-50:20
 	android:exported
-		ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:45:13-36
+		ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:44:13-36
 	android:name
-		ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:44:13-83
+		ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:43:13-83
 intent-filter#action:name:android.net.conn.CONNECTIVITY_CHANGE+category:name:android.intent.category.DEFAULT
-ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:46:13-50:29
+ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:45:13-49:29
 action#android.net.conn.CONNECTIVITY_CHANGE
-ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:47:17-79
+ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:46:17-79
 	android:name
-		ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:47:25-76
+		ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:46:25-76
 category#android.intent.category.DEFAULT
-ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:49:17-76
+ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:48:17-76
 	android:name
-		ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:49:27-73
+		ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:48:27-73
 receiver#com.xiaomi.push.service.receivers.PingReceiver
-ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:52:9-59:20
+ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:51:9-58:20
 	android:process
-		ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:55:13-43
+		ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:54:13-43
 	android:exported
-		ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:54:13-37
+		ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:53:13-37
 	android:name
-		ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:53:13-74
+		ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:52:13-74
 intent-filter#action:name:com.xiaomi.push.PING_TIMER
-ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:56:13-58:29
+ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:55:13-57:29
 action#com.xiaomi.push.PING_TIMER
-ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:57:17-69
+ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:56:17-69
 	android:name
-		ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:57:25-66
+		ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:56:25-66
 receiver#com.personal.mpush.receiver.MyMiPushReceiver
-ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:60:9-74:20
+ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:59:9-73:20
 	android:exported
-		ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:62:13-36
+		ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:61:13-36
 	android:name
-		ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:61:13-54
+		ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:60:13-54
 intent-filter#action:name:com.xiaomi.mipush.RECEIVE_MESSAGE
-ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:65:13-67:29
+ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:64:13-66:29
 action#com.xiaomi.mipush.RECEIVE_MESSAGE
-ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:66:17-76
+ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:65:17-76
 	android:name
-		ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:66:25-73
+		ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:65:25-73
 intent-filter#action:name:com.xiaomi.mipush.MESSAGE_ARRIVED
-ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:68:13-70:29
+ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:67:13-69:29
 action#com.xiaomi.mipush.MESSAGE_ARRIVED
-ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:69:17-76
+ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:68:17-76
 	android:name
-		ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:69:25-73
+		ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:68:25-73
 intent-filter#action:name:com.xiaomi.mipush.ERROR
-ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:71:13-73:29
+ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:70:13-72:29
 action#com.xiaomi.mipush.ERROR
-ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:72:17-66
+ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:71:17-66
 	android:name
-		ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:72:25-63
+		ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:71:25-63
 service#com.personal.mpush.service.MyHmsMessageService
-ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:76:9-82:19
+ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:77:9-83:19
 	android:exported
-		ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:78:13-37
+		ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:79:13-37
 	android:name
-		ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:77:13-56
+		ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:78:13-56
 intent-filter#action:name:com.huawei.push.action.MESSAGING_EVENT
-ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:79:13-81:29
+ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:80:13-82:29
 action#com.huawei.push.action.MESSAGING_EVENT
-ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:80:17-81
+ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:81:17-81
 	android:name
-		ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:80:25-78
+		ADDED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:81:25-78
 uses-sdk
 INJECTED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml

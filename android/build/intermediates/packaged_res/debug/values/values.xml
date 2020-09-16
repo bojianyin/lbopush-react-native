@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <dimen name="box_inset_layout_padding">0dp</dimen>
+    <dimen name="inner_frame_layout_padding">5dp</dimen>
     <string name="channel_description">ceshishudata</string>
     <string name="channel_name">ceshi001</string>
+    <string name="hello_world">Hello Square World!</string>
+    <string name="title_activity_main">MainActivity</string>
 </resources>

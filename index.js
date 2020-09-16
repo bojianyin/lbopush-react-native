@@ -31,8 +31,8 @@ export default class MyPush{
     }
 
     //xiaomi -> regiter | huawei->init getToken()
-    static registerPush(channelname,channeldec,channelid,conf){
-        return Mipush.registerPush(channelname,channeldec,channelid,JSON.stringify(conf));
+    static registerPush(channelname,channeldec,channelid){
+        return Mipush.registerPush(channelname,channeldec,channelid);
     }
 
     //xiaomi -> unregisterPush | huawei-> deltoken

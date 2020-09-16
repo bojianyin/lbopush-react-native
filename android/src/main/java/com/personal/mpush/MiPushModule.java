@@ -5,6 +5,7 @@ import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Build;
@@ -42,8 +43,8 @@ import java.util.HashMap;
 public class MiPushModule extends ReactContextBaseJavaModule {
     public static ReactApplicationContext context;
 
-    public static String APP_ID;
-    public static String APP_KEY;
+    public static String XM_APP_ID;
+    public static String XM_APP_KEY;
 
     private static String TAG = "pushlog";
 
@@ -72,50 +73,58 @@ public class MiPushModule extends ReactContextBaseJavaModule {
 
     //小米推送注册
     @ReactMethod
-    public void registerPush(String channelname, String channeldec, String channelid, String config) throws JSONException {
+    public void registerPush(String channelname, String channeldec, String channelid) throws JSONException {
         hwchannelid = channelid;
         createNotificationChannel(channelname, channeldec, channelid);
 
-
-        if (android.os.Build.BRAND.equals("Xiaomi")) {
-            //小米
-            if (!config.equals("")) {
-
-                JSONObject configjson = new JSONObject(config);
-
-                APP_ID = configjson.getString("xiaomi_appid");
-
-                APP_KEY = configjson.getString("xiaomi_appkey");
-                MiPushClient.registerPush(context, APP_ID, APP_KEY);
+        getToken();
 
 
-                //打开Log
-                LoggerInterface newLogger = new LoggerInterface() {
-
-                    @Override
-                    public void setTag(String tag) {
-                        // ignore
-                    }
-
-                    @Override
-                    public void log(String content, Throwable t) {
-                        Log.d("mipushlog", content, t);
-                    }
-
-                    @Override
-                    public void log(String content) {
-                        Log.d("mipushlog", content);
-                    }
-                };
-                Logger.setLogger(context, newLogger);
-            }
-
-
-        } else if (android.os.Build.BRAND.equals("HUAWEI")) {
-            getToken();
-        } else {
-            Log.e(TAG, "暂不支持");
-        }
+//        if (android.os.Build.BRAND.equals("Xiaomi")) {
+//            ApplicationInfo appInfo = null;
+//            try {
+//                appInfo = context.getPackageManager().getApplicationInfo(context.getPackageName(), PackageManager.GET_META_DATA);
+//            } catch (PackageManager.NameNotFoundException e) {
+//                e.printStackTrace();
+//            }
+//            assert appInfo != null;
+//            String xm_appkey=appInfo.metaData.getString("xiaomiappkey");
+//            String xm_appid=appInfo.metaData.getString("xiaomiappid");
+//            XM_APP_KEY=xm_appkey.substring(2,xm_appkey.length());
+//            XM_APP_ID=xm_appid.substring(2,xm_appid.length());
+//
+//            //小米
+//            if (!XM_APP_KEY.equals("")&&!XM_APP_ID.equals("")) {
+//
+//                MiPushClient.registerPush(context, XM_APP_ID, XM_APP_KEY);
+//
+//                //打开Log
+//                LoggerInterface newLogger = new LoggerInterface() {
+//
+//                    @Override
+//                    public void setTag(String tag) {
+//                        // ignore
+//                    }
+//
+//                    @Override
+//                    public void log(String content, Throwable t) {
+//                        Log.d("mipushlog", content, t);
+//                    }
+//
+//                    @Override
+//                    public void log(String content) {
+//                        Log.d("mipushlog", content);
+//                    }
+//                };
+//                Logger.setLogger(context, newLogger);
+//            }
+//
+//
+//        } else if (android.os.Build.BRAND.equals("HUAWEI")) {
+//            getToken();
+//        } else {
+//            Log.e(TAG, "暂不支持");
+//        }
 
     }
 
@@ -297,5 +306,6 @@ public class MiPushModule extends ReactContextBaseJavaModule {
 // 打印出的intentUri值就是设置到推送消息中intent字段的值
         Log.d("intentUri", intentUri);
     }
+
 
 }

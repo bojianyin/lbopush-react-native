@@ -56,6 +56,7 @@ public class MyMiPushReceiver extends PushMessageReceiver {
         params.putString("messageid",message.getMessageId());
         params.putString("title",message.getTitle());
         params.putString("description",message.getDescription());
+        params.putString("messagetype","小米推送");
         params.putString("extra",message.getExtra().toString());
         MipushHelper.sendEvent(MipushHelper.Clicked,params);
     }
@@ -75,6 +76,7 @@ public class MyMiPushReceiver extends PushMessageReceiver {
         params.putString("title",message.getTitle());
         params.putString("description",message.getDescription());
         params.putString("extra",message.getExtra().toString());
+        params.putString("messagetype","小米推送");
         MipushHelper.sendEvent(MipushHelper.Arrived,params);
     }
     @Override

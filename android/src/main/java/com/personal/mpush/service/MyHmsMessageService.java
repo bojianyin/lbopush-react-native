@@ -1,16 +1,21 @@
 package com.personal.mpush.service;
 
+import android.app.PendingIntent;
 import android.app.Service;
+import android.content.Intent;
 import android.content.ServiceConnection;
 import android.util.Log;
 
 import androidx.core.app.NotificationCompat;
 import androidx.core.app.NotificationManagerCompat;
 
+import com.facebook.react.bridge.Arguments;
+import com.facebook.react.bridge.WritableMap;
 import com.huawei.hms.push.HmsMessageService;
 import com.huawei.hms.push.RemoteMessage;
 import com.personal.mpush.MiPushModule;
 import com.personal.mpush.R;
+import com.personal.mpush.helper.MipushHelper;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -53,24 +58,46 @@ public class MyHmsMessageService extends HmsMessageService {
         String data=message.getData();
         JSONObject json= null;
         try {
+            Random rand = new Random();
+            int msgId=rand.nextInt(999999) + 1;
             json = new JSONObject(data);
+            WritableMap writableMap= Arguments.createMap();
+            writableMap.putString("extra",json.toString());
+            writableMap.putString("title",null);
+            writableMap.putString("description",null);
+            writableMap.putString("content",null);
+            writableMap.putString("token",message.getToken());
+            writableMap.putInt("messageid",msgId);
+            writableMap.putString("messagetype","华为透传");
+            MipushHelper.sendEvent(MipushHelper.Arrived,writableMap);
 
-            if(!MiPushModule.hwchannelid.equals("")){
-                NotificationCompat.Builder builder = new NotificationCompat.Builder(getApplicationContext(), MiPushModule.hwchannelid)
-                        .setSmallIcon(android.R.mipmap.sym_def_app_icon)
-                        .setContentTitle(json.getString("title"))
-                        .setContentText(json.getString("body"))
-                        .setPriority(NotificationCompat.PRIORITY_HIGH);
+//            Intent notifyIntent = new Intent(getApplicationContext(), );
+//            // Set the Activity to start in a new, empty task
+//            notifyIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+//            // Create the PendingIntent
+//            PendingIntent notifyPendingIntent = PendingIntent.getActivity(
+//                    this, 0, notifyIntent, PendingIntent.FLAG_UPDATE_CURRENT
+//            );
+//
+//
+//            if(!MiPushModule.hwchannelid.equals("")){
+//                NotificationCompat.Builder builder = new NotificationCompat.Builder(getApplicationContext(), MiPushModule.hwchannelid)
+//                        .setSmallIcon(android.R.mipmap.sym_def_app_icon)
+//                        .setContentTitle(json.getString("title"))
+//                        .setContentText(json.getString("body"))
+//                        .setPriority(NotificationCompat.PRIORITY_HIGH)
+//                        .setContentIntent(notifyPendingIntent)
+//                        .setAutoCancel(true);
+//
+//                NotificationManagerCompat notificationManager = NotificationManagerCompat.from(getApplicationContext());
+//
+//                // notificationId is a unique int for each notification that you must define
+//
+//                int msgid=0;
+//
+//                notificationManager.notify(msgid, builder.build());
 
-                NotificationManagerCompat notificationManager = NotificationManagerCompat.from(getApplicationContext());
-
-                // notificationId is a unique int for each notification that you must define
-
-                int msgid=0;
-                Random rand = new Random();
-                msgid=rand.nextInt(999999) + 1;
-                notificationManager.notify(msgid, builder.build());
-            }
+//            }
 
 
 
