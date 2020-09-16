@@ -77,54 +77,52 @@ public class MiPushModule extends ReactContextBaseJavaModule {
         hwchannelid = channelid;
         createNotificationChannel(channelname, channeldec, channelid);
 
-        getToken();
+
+        if (android.os.Build.BRAND.equals("Xiaomi")) {
+            ApplicationInfo appInfo = null;
+            try {
+                appInfo = context.getPackageManager().getApplicationInfo(context.getPackageName(), PackageManager.GET_META_DATA);
+            } catch (PackageManager.NameNotFoundException e) {
+                e.printStackTrace();
+            }
+            assert appInfo != null;
+            String xm_appkey=appInfo.metaData.getString("xiaomiappkey");
+            String xm_appid=appInfo.metaData.getString("xiaomiappid");
+            XM_APP_KEY=xm_appkey.substring(2,xm_appkey.length());
+            XM_APP_ID=xm_appid.substring(2,xm_appid.length());
+
+            //小米
+            if (!XM_APP_KEY.equals("")&&!XM_APP_ID.equals("")) {
+
+                MiPushClient.registerPush(context, XM_APP_ID, XM_APP_KEY);
+
+                //打开Log
+                LoggerInterface newLogger = new LoggerInterface() {
+
+                    @Override
+                    public void setTag(String tag) {
+                        // ignore
+                    }
+
+                    @Override
+                    public void log(String content, Throwable t) {
+                        Log.d("mipushlog", content, t);
+                    }
+
+                    @Override
+                    public void log(String content) {
+                        Log.d("mipushlog", content);
+                    }
+                };
+                Logger.setLogger(context, newLogger);
+            }
 
 
-//        if (android.os.Build.BRAND.equals("Xiaomi")) {
-//            ApplicationInfo appInfo = null;
-//            try {
-//                appInfo = context.getPackageManager().getApplicationInfo(context.getPackageName(), PackageManager.GET_META_DATA);
-//            } catch (PackageManager.NameNotFoundException e) {
-//                e.printStackTrace();
-//            }
-//            assert appInfo != null;
-//            String xm_appkey=appInfo.metaData.getString("xiaomiappkey");
-//            String xm_appid=appInfo.metaData.getString("xiaomiappid");
-//            XM_APP_KEY=xm_appkey.substring(2,xm_appkey.length());
-//            XM_APP_ID=xm_appid.substring(2,xm_appid.length());
-//
-//            //小米
-//            if (!XM_APP_KEY.equals("")&&!XM_APP_ID.equals("")) {
-//
-//                MiPushClient.registerPush(context, XM_APP_ID, XM_APP_KEY);
-//
-//                //打开Log
-//                LoggerInterface newLogger = new LoggerInterface() {
-//
-//                    @Override
-//                    public void setTag(String tag) {
-//                        // ignore
-//                    }
-//
-//                    @Override
-//                    public void log(String content, Throwable t) {
-//                        Log.d("mipushlog", content, t);
-//                    }
-//
-//                    @Override
-//                    public void log(String content) {
-//                        Log.d("mipushlog", content);
-//                    }
-//                };
-//                Logger.setLogger(context, newLogger);
-//            }
-//
-//
-//        } else if (android.os.Build.BRAND.equals("HUAWEI")) {
-//            getToken();
-//        } else {
-//            Log.e(TAG, "暂不支持");
-//        }
+        } else if (android.os.Build.BRAND.equals("HUAWEI")) {
+            getToken();
+        } else {
+            Log.e(TAG, "暂不支持");
+        }
 
     }
 
