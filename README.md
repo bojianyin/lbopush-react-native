@@ -26,6 +26,10 @@ settings.gradle
 app/build.gradle
 ```javascript
     implementation project(':lbopush-react-native')
+
+    //在文件头apply plugin: 'com.android.application'下一行添加如下配置
+    apply plugin: 'com.huawei.agconnect'
+    
 ```
 
 src/main/MainApplication
