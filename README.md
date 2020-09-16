@@ -1,15 +1,15 @@
-# lbopush-react-native
+# lbopush-react-native  
 
-##集成了小米&华为厂商推送,（ios暂不支持），通过小米｜华为厂商提供的api集成的客户端rn-sdk,
-#暂时不支持oppo,vivo等推送,后续会慢慢迭代集成5大厂商推送，包括ios会接通apn推送,因为本人对oc还是一直半解，所以还是希望有oc大佬来参与,非常欢迎加入!
-###issue多多提问题，多多指教，欢迎star,感谢🙏！
+## 集成了小米&华为厂商推送,（ios暂不支持），通过小米｜华为厂商提供的api集成的客户端rn-sdk,
+# 暂时不支持oppo,vivo等推送,后续会慢慢迭代集成5大厂商推送，包括ios会接通apn推送,因为本人对oc还是一知半解，所以还是希望有oc大佬来参与,非常欢迎加入!
+### issue多多提问题，多多指教，欢迎star,感谢🙏！
 
-###--V1.2.0 华为正式接入 支持华为透传推送及普通消息推送（暂时华为推送点击回调 只支持*原生activity* 跳转）--
+### --V1.2.0 华为正式接入 支持华为透传推送及普通消息推送（暂时华为推送点击回调 只支持*原生activity* 跳转）--
 
 
-##安装
+## 安装
     npm install lbopush-react-native
-##包配置
+## 包配置
     settings.gradle
             include ':lbopush-react-native'
             project(':lbopush-react-native').projectDir = new File(rootProject.projectDir, '../node_modules/lbopush-react-native/android')
@@ -20,12 +20,12 @@
     src/main/MainApplication
         packages.add(new MiPushPackage());
 
-##小米厂商集成步骤
-###手动集成
+## 小米厂商集成步骤
+### 手动集成
       暂无需要手动添加任何配置
              
-##华为厂商集成步骤
-###手动集成
+## 华为厂商集成步骤
+### 手动集成
     1.首先确保华为开发者联盟正确申请 推送app 并且按照 华为推送文档 正确填写 SHA256指纹.
     2.在华为开发者联盟 正确下载agconnect-services.json 并且放置在 主模块工程目录下 且于src同一级目录
     3.添加HUAWEI agcp插件以及Maven代码库。
@@ -54,7 +54,7 @@
       }
     4.华为集成完毕
 
-##华为推送点击回调须知
+## 华为推送点击回调须知
     1.普通推送 
       主工程清单文件 android配置一个自定义activity 用于点击普通推送后跳转
       exp:
@@ -92,16 +92,16 @@
       还在编写中,暂不支持点击推送回调       
 
 
-###使用方法
-   ####app唤醒必须首先调用 registerPush 方法,实例推送服务!!!
+### 使用方法
+   #### app唤醒必须首先调用 **registerPush** 方法,实例推送服务!!!
 
-###使用必须
+### 使用必须
 
     *必须首先在小米开放平台注册好推送账号.拿到appkey及appid
     *必须首先在华为开发者联盟注册好推送.拿到agconnect-services.json文件
 
 
-##api:
+## api:
 ```javascript
 const conf={
     "xiaomi_appid":"你的小米appId",
@@ -178,4 +178,4 @@ static getHuaweitoken()
 获取华为token 需要上传给服务器 服务器通过token 推送
 ```
 
-##我会陆续吧vivo,oppo,魅族等5大厂商 原厂推送集成进来 , 期待有能力的伙伴加入进来一起完善提交pr！！！
+## 我会陆续吧vivo,oppo,魅族等5大厂商 原厂推送集成进来 , 期待有能力的伙伴加入进来一起完善提交pr！！！
