@@ -16,145 +16,159 @@
 13-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:7:5-68
 13-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:7:22-65
 14    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-14-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:9:5-81
-14-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:9:22-78
+14-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:8:5-81
+14-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:8:22-78
 15    <uses-permission android:name="android.permission.INTERNET" />
-15-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:10:5-67
-15-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:10:22-64
+15-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:9:5-67
+15-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:9:22-64
 16    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-16-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:11:5-79
-16-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:11:22-76
+16-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:10:5-79
+16-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:10:22-76
 17    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-17-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:12:5-76
-17-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:12:22-73
+17-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:11:5-76
+17-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:11:22-73
 18    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-18-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:13:5-75
-18-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:13:22-72
+18-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:12:5-75
+18-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:12:22-72
 19    <uses-permission android:name="android.permission.VIBRATE" />
-19-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:14:5-66
-19-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:14:22-63
+19-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:13:5-66
+19-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:13:22-63
 20
 21    <permission
-21-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:16:5-18:47
+21-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:15:5-17:47
 22        android:name="com.personal.mipush.permission.MIPUSH_RECEIVE"
-22-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:17:9-69
+22-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:16:9-69
 23        android:protectionLevel="signature" /> <!-- 这里com.xiaomi.mipushdemo改成app的包名 -->
-23-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:18:9-44
+23-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:17:9-44
 24    <uses-permission android:name="com.personal.mipush.permission.MIPUSH_RECEIVE" />
-24-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:19:5-85
-24-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:19:22-82
+24-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:18:5-85
+24-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:18:22-82
 25
 26    <application>
-26-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:21:5-84:19
-27        <service
-27-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:24:9-27:46
-28            android:name="com.xiaomi.push.service.XMPushService"
-28-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:25:13-65
+26-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:20:5-88:19
+27        <receiver
+27-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:22:9-29:20
+28            android:name="com.personal.mpush.receiver.MyLocalNotifyReceiver"
+28-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:23:13-59
 29            android:enabled="true"
-29-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:26:13-35
-30            android:process=":pushservice" /> <!-- 注：此service必须在3.0.1版本以后（包括3.0.1版本）加入 -->
-30-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:27:13-43
-31        <service
-31-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:28:9-33:46
-32            android:name="com.xiaomi.push.service.XMJobService"
-32-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:29:13-64
-33            android:enabled="true"
-33-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:30:13-35
-34            android:exported="false"
-34-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:31:13-37
-35            android:permission="android.permission.BIND_JOB_SERVICE"
-35-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:32:13-69
-36            android:process=":pushservice" />
-36-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:33:13-43
-37        <service
-37-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:34:9-37:39
-38            android:name="com.xiaomi.mipush.sdk.PushMessageHandler"
-38-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:35:13-68
-39            android:enabled="true"
-39-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:36:13-35
-40            android:exported="true" /> <!-- 注：此service必须在2.2.5版本以后（包括2.2.5版本）加入 -->
-40-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:37:13-36
-41        <service
-41-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:38:9-40:38
-42            android:name="com.xiaomi.mipush.sdk.MessageHandleService"
-42-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:39:13-70
-43            android:enabled="true" />
-43-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:40:13-35
-44
-45        <receiver
-45-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:42:9-50:20
-46            android:name="com.xiaomi.push.service.receivers.NetworkStatusReceiver"
-46-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:43:13-83
-47            android:exported="true" >
-47-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:44:13-36
-48            <intent-filter>
-48-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:45:13-49:29
-49                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
-49-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:46:17-79
-49-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:46:25-76
-50
-51                <category android:name="android.intent.category.DEFAULT" />
-51-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:48:17-76
-51-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:48:27-73
-52            </intent-filter>
-53        </receiver>
+29-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:24:13-35
+30            android:exported="true" >
+30-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:25:13-36
+31            <intent-filter>
+31-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:26:13-28:29
+32                <action android:name="com.personal.mpush.sendReceiver" />
+32-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:27:17-74
+32-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:27:25-71
+33            </intent-filter>
+34        </receiver>
+35
+36        <service
+36-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:31:9-34:46
+37            android:name="com.xiaomi.push.service.XMPushService"
+37-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:32:13-65
+38            android:enabled="true"
+38-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:33:13-35
+39            android:process=":pushservice" /> <!-- 注：此service必须在3.0.1版本以后（包括3.0.1版本）加入 -->
+39-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:34:13-43
+40        <service
+40-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:35:9-40:46
+41            android:name="com.xiaomi.push.service.XMJobService"
+41-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:36:13-64
+42            android:enabled="true"
+42-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:37:13-35
+43            android:exported="false"
+43-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:38:13-37
+44            android:permission="android.permission.BIND_JOB_SERVICE"
+44-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:39:13-69
+45            android:process=":pushservice" />
+45-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:40:13-43
+46        <service
+46-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:41:9-44:39
+47            android:name="com.xiaomi.mipush.sdk.PushMessageHandler"
+47-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:42:13-68
+48            android:enabled="true"
+48-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:43:13-35
+49            android:exported="true" /> <!-- 注：此service必须在2.2.5版本以后（包括2.2.5版本）加入 -->
+49-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:44:13-36
+50        <service
+50-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:45:9-47:38
+51            android:name="com.xiaomi.mipush.sdk.MessageHandleService"
+51-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:46:13-70
+52            android:enabled="true" />
+52-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:47:13-35
+53
 54        <receiver
-54-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:51:9-58:20
-55            android:name="com.xiaomi.push.service.receivers.PingReceiver"
-55-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:52:13-74
-56            android:exported="false"
-56-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:53:13-37
-57            android:process=":pushservice" >
-57-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:54:13-43
-58            <intent-filter>
-58-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:55:13-57:29
-59                <action android:name="com.xiaomi.push.PING_TIMER" />
-59-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:56:17-69
-59-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:56:25-66
-60            </intent-filter>
-61        </receiver>
-62        <receiver
-62-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:59:9-73:20
-63            android:name="com.personal.mpush.receiver.MyMiPushReceiver"
-63-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:60:13-54
-64            android:exported="true" >
-64-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:61:13-36
-65
-66            <!-- 这里com.xiaomi.mipushdemo.DemoMessageRreceiver改成app中定义的完整类名 -->
+54-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:49:9-57:20
+55            android:name="com.xiaomi.push.service.receivers.NetworkStatusReceiver"
+55-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:50:13-83
+56            android:exported="true" >
+56-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:51:13-36
+57            <intent-filter>
+57-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:52:13-56:29
+58                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+58-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:53:17-79
+58-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:53:25-76
+59
+60                <category android:name="android.intent.category.DEFAULT" />
+60-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:55:17-76
+60-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:55:27-73
+61            </intent-filter>
+62        </receiver>
+63        <receiver
+63-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:58:9-65:20
+64            android:name="com.xiaomi.push.service.receivers.PingReceiver"
+64-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:59:13-74
+65            android:exported="false"
+65-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:60:13-37
+66            android:process=":pushservice" >
+66-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:61:13-43
 67            <intent-filter>
-67-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:64:13-66:29
-68                <action android:name="com.xiaomi.mipush.RECEIVE_MESSAGE" />
-68-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:65:17-76
-68-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:65:25-73
+67-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:62:13-64:29
+68                <action android:name="com.xiaomi.push.PING_TIMER" />
+68-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:63:17-69
+68-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:63:25-66
 69            </intent-filter>
-70            <intent-filter>
-70-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:67:13-69:29
-71                <action android:name="com.xiaomi.mipush.MESSAGE_ARRIVED" />
-71-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:68:17-76
-71-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:68:25-73
-72            </intent-filter>
-73            <intent-filter>
-73-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:70:13-72:29
-74                <action android:name="com.xiaomi.mipush.ERROR" />
-74-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:71:17-66
-74-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:71:25-63
-75            </intent-filter>
-76        </receiver>
-77
-78        <!-- hms透传service -->
-79        <service
-79-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:77:9-83:19
-80            android:name="com.personal.mpush.service.MyHmsMessageService"
-80-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:78:13-56
-81            android:exported="false" >
-81-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:79:13-37
+70        </receiver>
+71        <receiver
+71-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:66:9-80:20
+72            android:name="com.personal.mpush.receiver.MyMiPushReceiver"
+72-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:67:13-54
+73            android:exported="true" >
+73-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:68:13-36
+74
+75            <!-- 这里com.xiaomi.mipushdemo.DemoMessageRreceiver改成app中定义的完整类名 -->
+76            <intent-filter>
+76-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:71:13-73:29
+77                <action android:name="com.xiaomi.mipush.RECEIVE_MESSAGE" />
+77-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:72:17-76
+77-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:72:25-73
+78            </intent-filter>
+79            <intent-filter>
+79-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:74:13-76:29
+80                <action android:name="com.xiaomi.mipush.MESSAGE_ARRIVED" />
+80-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:75:17-76
+80-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:75:25-73
+81            </intent-filter>
 82            <intent-filter>
-82-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:80:13-82:29
-83                <action android:name="com.huawei.push.action.MESSAGING_EVENT" />
-83-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:81:17-81
-83-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:81:25-78
+82-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:77:13-79:29
+83                <action android:name="com.xiaomi.mipush.ERROR" />
+83-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:78:17-66
+83-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:78:25-63
 84            </intent-filter>
-85        </service>
-86    </application>
-87
-88</manifest>
+85        </receiver> <!-- hms透传service -->
+86        <service
+86-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:81:9-87:19
+87            android:name="com.personal.mpush.service.MyHmsMessageService"
+87-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:82:13-56
+88            android:exported="false" >
+88-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:83:13-37
+89            <intent-filter>
+89-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:84:13-86:29
+90                <action android:name="com.huawei.push.action.MESSAGING_EVENT" />
+90-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:85:17-81
+90-->/Users/xiaobo/Desktop/personalMipush/android/lbopush-react-native/android/src/main/AndroidManifest.xml:85:25-78
+91            </intent-filter>
+92        </service>
+93    </application>
+94
+95</manifest>

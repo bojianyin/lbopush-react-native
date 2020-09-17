@@ -41,11 +41,6 @@ public class MyHmsMessageService extends HmsMessageService {
 
 
 
-
-    // {
-    //  title:"",
-    //  body:""
-    // }
     @Override
     public void onMessageReceived(RemoteMessage message) {
         super.onMessageReceived(message);
@@ -65,41 +60,11 @@ public class MyHmsMessageService extends HmsMessageService {
             writableMap.putString("extra",json.toString());
             writableMap.putString("title",null);
             writableMap.putString("description",null);
-            writableMap.putString("content",null);
+            writableMap.putString("content",json.toString());
             writableMap.putString("token",message.getToken());
             writableMap.putInt("messageid",msgId);
             writableMap.putString("messagetype","华为透传");
             MipushHelper.sendEvent(MipushHelper.Arrived,writableMap);
-
-//            Intent notifyIntent = new Intent(getApplicationContext(), );
-//            // Set the Activity to start in a new, empty task
-//            notifyIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-//            // Create the PendingIntent
-//            PendingIntent notifyPendingIntent = PendingIntent.getActivity(
-//                    this, 0, notifyIntent, PendingIntent.FLAG_UPDATE_CURRENT
-//            );
-//
-//
-//            if(!MiPushModule.hwchannelid.equals("")){
-//                NotificationCompat.Builder builder = new NotificationCompat.Builder(getApplicationContext(), MiPushModule.hwchannelid)
-//                        .setSmallIcon(android.R.mipmap.sym_def_app_icon)
-//                        .setContentTitle(json.getString("title"))
-//                        .setContentText(json.getString("body"))
-//                        .setPriority(NotificationCompat.PRIORITY_HIGH)
-//                        .setContentIntent(notifyPendingIntent)
-//                        .setAutoCancel(true);
-//
-//                NotificationManagerCompat notificationManager = NotificationManagerCompat.from(getApplicationContext());
-//
-//                // notificationId is a unique int for each notification that you must define
-//
-//                int msgid=0;
-//
-//                notificationManager.notify(msgid, builder.build());
-
-//            }
-
-
 
         } catch (JSONException e) {
             e.printStackTrace();

@@ -8,6 +8,7 @@ const Mipush = NativeModules.MiPush;
 const listeners = {};
 const MessageArrived = 'MessageArrived'; //接受到通知
 const MessageClicked = 'MessageClicked'; //点击了通知
+const MessageLocal   = 'MessageLocal';   //本地通知
 
 export default class MyPush{
     static OnMessageArrived(callback) {
@@ -22,6 +23,13 @@ export default class MyPush{
                 callback(result)
             })
     }
+    static OnMessageLocal(callback){
+        listeners[callback] = DeviceEventEmitter.addListener(
+            MessageLocal, result => {
+                callback(result)
+            })
+    }
+
     static removeListener(callback) {
         if (!listeners[callback]) {
             return
@@ -94,5 +102,21 @@ export default class MyPush{
     static getHuaweitoken(){
         return Mipush.getHuaweitoken();
     }
+
+    //发送本地推送
+    static sendLocalNotification(title,text,param){
+        return Mipush.sendLocalNotification(title,text,JSON.stringify(param));
+    }
+
+    //获取是否开启推送
+    static getisOpenNotification(){
+        return Mipush.isopenNotification();
+    }
+
+    //去设置app权限
+    static startSettingAppInfo(){
+        return Mipush.startSettingAppInfo();
+    }
+
 
 }

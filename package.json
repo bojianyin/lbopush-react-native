@@ -1,12 +1,14 @@
 {
   "name": "lbopush-react-native",
-  "version": "1.2.2",
-  "description": "",
+  "version": "1.2.3",
+  "description": "一流的免费推送集成工具,android完全还原厂商推送",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": [
+    "厂商推送","lbopush","小米推送","华为推送"
+  ],
   "author": "lboxiaobo",
   "license": "ISC",
   "repository": "https://github.com/bojianyin/lbopush-react-native.git"

@@ -3,12 +3,14 @@ package com.personal.mpush;
 import android.app.ActivityManager;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
+import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Build;
+import android.provider.Settings;
 import android.text.TextUtils;
 import android.util.Log;
 import android.widget.Toast;
@@ -29,6 +31,7 @@ import com.huawei.hms.aaid.HmsInstanceId;
 import com.huawei.hms.api.ConnectionResult;
 import com.huawei.hms.api.HuaweiApiClient;
 import com.huawei.hms.common.ApiException;
+import com.personal.mpush.receiver.MyLocalNotifyReceiver;
 import com.xiaomi.channel.commonutils.logger.LoggerInterface;
 import com.xiaomi.mipush.sdk.Logger;
 import com.xiaomi.mipush.sdk.MiPushClient;
@@ -39,6 +42,7 @@ import org.json.JSONObject;
 import java.util.List;
 import java.util.Map;
 import java.util.HashMap;
+import java.util.Random;
 
 public class MiPushModule extends ReactContextBaseJavaModule {
     public static ReactApplicationContext context;
@@ -74,8 +78,9 @@ public class MiPushModule extends ReactContextBaseJavaModule {
     //小米推送注册
     @ReactMethod
     public void registerPush(String channelname, String channeldec, String channelid) throws JSONException {
-        hwchannelid = channelid;
+
         createNotificationChannel(channelname, channeldec, channelid);
+        hwchannelid = channelid;
 
 
         if (android.os.Build.BRAND.equals("Xiaomi")) {
@@ -304,6 +309,67 @@ public class MiPushModule extends ReactContextBaseJavaModule {
 // 打印出的intentUri值就是设置到推送消息中intent字段的值
         Log.d("intentUri", intentUri);
     }
+
+    //本地推
+    @ReactMethod
+    public void sendLocalNotification(String title,String text,String params) {
+
+            Random rand = new Random();
+            int msgId=rand.nextInt(999999) + 1;
+
+            Intent notifyIntent = new Intent(context, MyLocalNotifyReceiver.class);
+            // Set the Activity to start in a new, empty task
+            notifyIntent.setAction("com.personal.mpush.sendReceiver");
+
+            notifyIntent.putExtra("params",params);
+            notifyIntent.putExtra("messageid",msgId);
+
+            // Create the PendingIntent
+            PendingIntent notifyPendingIntent = PendingIntent.getBroadcast(
+                    context, 0, notifyIntent, PendingIntent.FLAG_UPDATE_CURRENT
+            );
+
+
+            if(!MiPushModule.hwchannelid.equals("")){
+                NotificationCompat.Builder builder = new NotificationCompat.Builder(context, MiPushModule.hwchannelid)
+                        .setSmallIcon(context.getApplicationInfo().icon)
+                        .setContentTitle(title)
+                        .setContentText(text)
+                        .setPriority(NotificationCompat.PRIORITY_HIGH)
+                        .setContentIntent(notifyPendingIntent)
+                        .setAutoCancel(true);
+
+                NotificationManagerCompat notificationManager = NotificationManagerCompat.from(context);
+
+                // notificationId is a unique int for each notification that you must define
+
+
+
+                notificationManager.notify(msgId, builder.build());
+
+            }
+    }
+
+
+    //推送是否开启
+    @ReactMethod
+    public void isopenNotification(Promise p){
+        NotificationManagerCompat manager = NotificationManagerCompat.from(context);
+        boolean isOpened = manager.areNotificationsEnabled();
+        p.resolve(isOpened);
+    }
+
+    //去往app权限设置
+    @ReactMethod
+    public void startSettingAppInfo(){
+        Intent intent = new Intent();
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        intent.setAction(Settings.ACTION_APPLICATION_DETAILS_SETTINGS);
+        Uri uri = Uri.fromParts("package",context.getPackageName(), null);
+        intent.setData(uri);
+        context.startActivity(intent);
+    }
+
 
 
 }
