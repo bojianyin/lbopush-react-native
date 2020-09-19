@@ -1,7 +1,7 @@
 {
   "name": "lbopush-react-native",
-  "version": "1.2.3",
-  "description": "lbopush为你提供一流的免费消息推送,android完全还原厂商推送",
+  "version": "1.2.4",
+  "description": "lbopush-react-native为你提供一流的免费消息推送,android完全还原厂商推送",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

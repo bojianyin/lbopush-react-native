@@ -1,7 +1,9 @@
+require 'json'
+pjson = JSON.parse(File.read('../package.json'))
 
 Pod::Spec.new do |s|
   s.name         = "RNLbopush"
-  s.version      = "1.0.0"
+  s.version      = pjson["version"]
   s.summary      = "RNLbopush"
   s.description  = <<-DESC
                   RNLbopush
